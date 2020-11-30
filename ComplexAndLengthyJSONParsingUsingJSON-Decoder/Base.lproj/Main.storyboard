@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ComplexAndLengthyJSONParsingUsingJSON_Decoder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nUa-f3-gfN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="107" id="aFh-Tx-QxT" customClass="ComplexTableView" customModule="ComplexAndLengthyJSONParsingUsingJSON_Decoder" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aFh-Tx-QxT" id="gZY-hR-Jd3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batter_ID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgv-Qy-eaa">
+                                                    <rect key="frame" x="10" y="5" width="394" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.37330363376039855" green="0.25837185559138448" blue="0.10154417073222953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batter_Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTQ-AR-wnH">
+                                                    <rect key="frame" x="10" y="29" width="394" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.11350045659999999" green="0.78039215689999997" blue="0.58269603810000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topping_ID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gO-Zq-M6y">
+                                                    <rect key="frame" x="10" y="53" width="394" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.92941176469999998" green="0.20784313730000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Topping_Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oh-vd-nIe">
+                                                    <rect key="frame" x="10" y="77" width="394" height="25"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.045805393049295776" green="0.35479127831690138" blue="0.87354796675915491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="qgv-Qy-eaa" secondAttribute="trailing" constant="10" id="8HV-ur-DMz"/>
+                                                <constraint firstItem="8gO-Zq-M6y" firstAttribute="top" secondItem="xTQ-AR-wnH" secondAttribute="bottom" constant="5" id="Dvi-XZ-gO3"/>
+                                                <constraint firstItem="3Oh-vd-nIe" firstAttribute="trailing" secondItem="qgv-Qy-eaa" secondAttribute="trailing" id="FUN-hN-B5R"/>
+                                                <constraint firstItem="qgv-Qy-eaa" firstAttribute="top" secondItem="gZY-hR-Jd3" secondAttribute="top" constant="5" id="TFn-qR-uqj"/>
+                                                <constraint firstItem="xTQ-AR-wnH" firstAttribute="trailing" secondItem="qgv-Qy-eaa" secondAttribute="trailing" id="ZSo-cJ-jlG"/>
+                                                <constraint firstItem="8gO-Zq-M6y" firstAttribute="trailing" secondItem="qgv-Qy-eaa" secondAttribute="trailing" id="e1c-9V-KHU"/>
+                                                <constraint firstAttribute="bottom" secondItem="3Oh-vd-nIe" secondAttribute="bottom" constant="5" id="eI9-Lz-ExH"/>
+                                                <constraint firstItem="3Oh-vd-nIe" firstAttribute="leading" secondItem="qgv-Qy-eaa" secondAttribute="leading" id="ioR-be-NAg"/>
+                                                <constraint firstItem="qgv-Qy-eaa" firstAttribute="leading" secondItem="gZY-hR-Jd3" secondAttribute="leading" constant="10" id="iyK-eG-fdU"/>
+                                                <constraint firstItem="3Oh-vd-nIe" firstAttribute="top" secondItem="8gO-Zq-M6y" secondAttribute="bottom" constant="5" id="niq-eN-ht4"/>
+                                                <constraint firstItem="xTQ-AR-wnH" firstAttribute="leading" secondItem="qgv-Qy-eaa" secondAttribute="leading" id="o1B-lY-eVZ"/>
+                                                <constraint firstItem="8gO-Zq-M6y" firstAttribute="leading" secondItem="qgv-Qy-eaa" secondAttribute="leading" id="qqZ-rv-cni"/>
+                                                <constraint firstItem="xTQ-AR-wnH" firstAttribute="top" secondItem="qgv-Qy-eaa" secondAttribute="bottom" constant="5" id="sfq-rW-eIt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label_batter_id" destination="qgv-Qy-eaa" id="Gn0-eM-uxf"/>
+                                            <outlet property="label_batter_type" destination="xTQ-AR-wnH" id="CX9-at-Cnu"/>
+                                            <outlet property="label_topping_id" destination="8gO-Zq-M6y" id="DCJ-tg-I7g"/>
+                                            <outlet property="label_topping_type" destination="3Oh-vd-nIe" id="vcC-eZ-SQZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="kO8-eC-sbK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Kfq-ei-GzW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nUa-f3-gfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9sL-Lg-udS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nUa-f3-gfN" secondAttribute="bottom" id="AG6-Uj-Kdr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nUa-f3-gfN" secondAttribute="trailing" id="AvV-E1-ncD"/>
+                            <constraint firstItem="nUa-f3-gfN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i15-2j-Fzu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nUa-f3-gfN" id="1Gq-7w-Vzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
