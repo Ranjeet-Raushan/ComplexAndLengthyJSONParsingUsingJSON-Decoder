@@ -1,10 +1,7 @@
-//
 //  SceneDelegate.swift
 //  ComplexAndLengthyJSONParsingUsingJSON-Decoder
-//
 //  Created by Ranjeet Raushan on 29/11/20.
 //  Copyright © 2020 Ranjeet Raushan. All rights reserved.
-//
 
 import UIKit
 
